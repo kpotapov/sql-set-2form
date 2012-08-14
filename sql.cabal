@@ -1,0 +1,20 @@
+Name:                sql
+Version:             0.0
+Description:         sql "insert" converted from "values" into "set a=b" form
+License:             GPL
+License-file:        LICENSE
+Author:              Constantine Potapov
+Maintainer:          constantine.potapov@gmail.com
+Build-Type:          Simple
+Cabal-Version:       >=1.2
+
+Executable sql
+  hs-source-dirs:    src
+  Main-is:           sql.hs
+  Build-Depends:     base >= 3 && < 5,
+                     parsec,
+                     haskell98
+Executable test
+  test-is: sqlTest
+  build-depends: HUnit
+  hs-source-dirs: tests src
